@@ -1,0 +1,45 @@
+/* Write your CSS here */
+.container {
+  height: 130vh;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head1 {
+  color: black;
+  font-weight: bold;
+}
+
+.list {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .list {
+    display: grid;
+    grid-template-columns: 200px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .list {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 200px 200px 200px 200px;
+  }
+}
+
+.icondiv {
+  display: flex;
+  flex-direction: row;
+}
+.img2 {
+  height: 30px;
+  width: 30px;
+}
